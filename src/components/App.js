@@ -4,9 +4,18 @@ import Navbar from './Navbar'
 import Photos from './Photos'
 
 function App() {
+  const [searchTerm, setSearchTerm] = React.useState('')
+
+  const handleSearch = e => {
+    setSearchTerm(e.target.value)
+  }
+
   return (
     <div className="App">
-      <Search />
+      <Search 
+        handleSearch={handleSearch}
+        searchTerm={searchTerm}
+      />
 
       <Navbar />
 
