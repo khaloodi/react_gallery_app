@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 import Search from './Search'
 import Navbar from './Navbar'
 import Photos from './Photos'
