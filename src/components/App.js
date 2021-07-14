@@ -26,6 +26,7 @@ function App() {
       .then(response => {
         // handle success
         setData(response.data.photos.photo)
+        console.log(data)
       })
       .catch(error => {
         // handle error
@@ -43,7 +44,7 @@ function App() {
       <Navbar />
 
       <Photos 
-        pics={data}
+        pics={data} // photo data passed down as
       />
 
     </div>
