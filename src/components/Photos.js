@@ -15,7 +15,8 @@ import React from 'react'
 
 // export default List
 
-const Photos = () => {
+const Photos = ({pics}) => {
+  console.log(pics)
   return (
     <div className="photo-container">
       <h2>Results</h2>

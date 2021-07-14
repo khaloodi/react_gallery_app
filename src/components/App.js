@@ -26,7 +26,6 @@ function App() {
       .then(response => {
         // handle success
         setData(response.data.photos.photo)
-        console.log(data)
       })
       .catch(error => {
         // handle error
