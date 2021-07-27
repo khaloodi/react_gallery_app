@@ -1,9 +1,7 @@
 import React from 'react'
-// import { withRouter } from 'react-router-dom'
 import { useHistory } from "react-router"
 
 const Search = ({searchTerm, handleSearch, performSearch}) => {
-  // const userInput = React.createRef()
   const history = useHistory()
 
   const handleSubmit = e => {
@@ -21,7 +19,6 @@ const Search = ({searchTerm, handleSearch, performSearch}) => {
         type="search" 
         name="search" 
         placeholder="Search" 
-        // ref={userInput} 
         onChange={handleSearch}        
       />
       <button type="submit" className="search-button">
