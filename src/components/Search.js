@@ -1,15 +1,28 @@
 import React from 'react'
+// import { withRouter } from 'react-router-dom'
+import { useHistory } from "react-router"
 
-const Search = ({searchTerm, handleSearch}) => {
+const Search = ({searchTerm, handleSearch, performSearch}) => {
   // const userInput = React.createRef()
+  const history = useHistory()
+
+  const handleSubmit = e => {
+		e.preventDefault();
+		let query = searchTerm;
+		let path = `/search_results/${query}`;
+		performSearch(query);
+		history.push(path);
+		e.currentTarget.reset();
+	};
+  
   return (  
-    <form className="search-form">
+    <form className="search-form" onSubmit={handleSubmit}>
       <input 
         type="search" 
         name="search" 
         placeholder="Search" 
         // ref={userInput} 
-        onChange={handleSearch}
+        onChange={handleSearch}        
       />
       <button type="submit" className="search-button">
         <svg fill="#fff" height="24" viewBox="0 0 23 23" width="24" xmlns="http://www.w3.org/2000/svg">
