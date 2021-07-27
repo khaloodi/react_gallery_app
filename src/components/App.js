@@ -31,9 +31,7 @@ function App() {
         handleSearch={handleSearch}
         searchTerm={searchTerm}
       />
-
       <Navbar />
-
       <Photos 
         pics={data} // photo data passed down as
       />
