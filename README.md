@@ -1,3 +1,7 @@
+# React Gallery App
+
+This application grabs and displays data using a Flicker API key. This application uses modern React tools including Hooks and React-Router to manage data and URLS.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
