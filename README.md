@@ -1,3 +1,5 @@
+🔥 [live link](https://amazing-gallery-app.netlify.app) 🔥
+
 # React Gallery App
 
 This application grabs and displays data using a Flicker API key. This application uses modern React tools including Hooks and React-Router to manage data and URLS.
