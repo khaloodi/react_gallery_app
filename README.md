@@ -1,4 +1,4 @@
-🔥  [live link](https://amazing-gallery-app.netlify.app) 🔥
+Visit site here: [amazing gallery app](https://amazing-gallery-app.netlify.app) 🔥
 
 # React Gallery App
 
